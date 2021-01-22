@@ -44,6 +44,7 @@ body {
   color: aliceblue;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
+  text-align: left;
 }
 
 .navbar1 .nav1 li a:hover,
@@ -125,6 +126,9 @@ body {
 
 .box1 {
   color: white;
+  background-image: url('./image/img/bg-1a.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .box1 div {
@@ -275,6 +279,9 @@ body {
   height: 316px;
   color: white;
   margin-top: 3rem;
+  background-image: url('./image/img/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #service-area h1 {
@@ -302,8 +309,6 @@ body {
 .testimorial-area .card {
   background-color: #f2f2f2;
   border: none;
-  max-width: 350px;
-  margin: 3rem auto;
 }
 
 .testimorial-area h5 {
@@ -313,9 +318,8 @@ body {
 }
 
 .testimorial-area p {
-  padding: 10px 20px;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6em;
 }
 
@@ -331,7 +335,144 @@ body {
 }
 
 .testimorial-area a {
-  padding: 1rem;
   font-size: 2rem;
   border-radius: 2rem;
+}
+
+/* Responsive testimorial-area small-screen */
+
+@media screen and (max-width: 580px) {
+  .testimorial-area .card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .testimorial-area .card {
+    margin-top: 2rem;
+  }
+}
+
+/* One big column start */
+
+.one-big-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.one-big-column .card {
+  padding: 0;
+}
+
+.one-big-column .card .card-title {
+  color: #666666;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.one-big-column .card p {
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.one-big-column .card a {
+  font-size: 25px;
+  border: 1px rgba(48, 44, 44, 0.815) solid;
+  border-radius: 20px;
+  margin: 3rem 1rem;
+  margin-left: 2rem;
+  padding: 1.5rem 3rem;
+  transition: background-color 0.5s;
+  text-align: center;
+}
+
+.one-big-column .card a:hover {
+  color: rgba(235, 224, 224, 0.863);
+  background-color: rgb(71, 71, 70);
+}
+
+/* form section start */
+
+.form-sect {
+  height: auto;
+  background-image: url('image/img/bg-3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-sect .container {
+  padding: 5rem 0;
+}
+
+.form-sect .container .info {
+  background-color: rgba(248, 246, 244, 0.4);
+  font-size: 25px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.form-sect .container .row input {
+  border-radius: 10px;
+  background-color: rgba(255, 235, 205, 0.4);
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+}
+
+.form-sect .container .row input:hover,
+.form-sect .container .row input:focus,
+.form-sect .container .row textarea:hover {
+  background-color: rgba(255, 235, 205, 0.6);
+  border: 1px solid white;
+}
+
+.form-sect .container .row .form-control::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  font-size: 18px;
+}
+
+.form-sect .container .row form {
+  padding: 0;
+}
+
+.form-sect .container textarea {
+  border-radius: 10px;
+  background-color: rgba(255, 235, 205, 0.4);
+  color: rgba(0, 0, 0, 1);
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 20px;
+  border: none;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 760px) {
+  .form-sect .container textarea {
+    max-height: 180px;
+  }
+
+  .form-sect .container .info,
+  .form-sect .container .row input {
+    font-size: 2rem;
+  }
+}
+
+.form-sect .container .row input[type='submit'] {
+  width: 80%;
 }
